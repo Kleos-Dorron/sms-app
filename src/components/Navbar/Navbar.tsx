@@ -1,9 +1,9 @@
-import React from 'react';
-import { Navbar, Nav, Dropdown, DropdownToggle, DropdownMenu, DropdownItem, NavLink, NavItem, UncontrolledDropdown, NavbarBrand } from 'reactstrap';
-import { FaUser, FaBook, FaChalkboardTeacher, FaBuilding, FaFile, FaThList } from 'react-icons/fa';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React from "react";
+import { Navbar, Nav, Dropdown, DropdownToggle, DropdownMenu, DropdownItem, NavLink, NavItem, UncontrolledDropdown, NavbarBrand } from "reactstrap";
+import { FaUser, FaBook, FaChalkboardTeacher, FaBuilding, FaFile, FaThList } from "react-icons/fa";
+import "bootstrap/dist/css/bootstrap.min.css";
 
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 const AppNavbar = () => {
   return (
     <Navbar color="primary" expand="md" dark>
@@ -13,12 +13,19 @@ const AppNavbar = () => {
           src="/BrandLogo.svg"
           style={{
             height: 40,
-            width: 50
+            width: 50,
           }}
         />
         SMS
       </NavbarBrand>
-      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <button
+        className="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
       </button>
       <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -34,6 +41,9 @@ const AppNavbar = () => {
           </Link>
           <Link to="/Classrooms" className="nav-link">
             <FaBuilding /> Classrooms
+          </Link>
+          <Link to="/StudentDetailReport" className="nav-link">
+            <FaFile /> Report
           </Link>
           <NavItem>
             <UncontrolledDropdown>
