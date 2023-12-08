@@ -3,7 +3,7 @@ import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 //7 Components
-import StudentRegistration from "./components/Student-Registration";
+import StudentRegistration from "./components/Student-Registration/Student-Registration";
 import Teachers from "./components/Teachers/Teachers";
 import Subjects from "./components/Subjects/Subjects";
 import Classrooms from "./components/Classrooms/Classrooms";
@@ -11,11 +11,13 @@ import Classrooms from "./components/Classrooms/Classrooms";
 import AllocateClassrooms from "./components/Allocate-Classrooms/Allocate-Classrooms";
 import AllocateSubjects from "./components/Allocate-Subjects/Allocate-Subjects";
 import StudentDetailReport from "./components/Student-Detail-Report/Student-Detail-Report";
+import AppNavbar from "./components/Navbar/Navbar";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
+      <AppNavbar />
         <Routes>
           //Define the Path-Component
           <Route path="/" element={<StudentRegistration />} />
